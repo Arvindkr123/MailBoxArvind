@@ -1,0 +1,14 @@
+.emailtype {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid whitesmoke;
+}
+.emailtype > .emailtype__options {
+  display: flex;
+  align-items: center;
+  min-width: 230px;
+  padding: 0px 10px;
+  cursor: pointer;
+  border-bottom: 3px solid #fff;
+}
+
