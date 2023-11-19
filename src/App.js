@@ -1,27 +1,26 @@
 import React, { useEffect, useState } from "react";
+import { Routes, Route } from "react-router-dom";
 import { Provider, useDispatch, useSelector } from "react-redux";
-import SignUp from "./components/User/SignUp";
-import store from "./components/Store/store";
-// import { ThemeProvider } from "@emotion/react";
-import { Route, Routes } from "react-router-dom";
-import NavBar from "./components/NavBar/NavBar";
-import Header from "./components/NavBar/Header";
-import SideBar from "./components/NavBar/SideBar";
-import Emaillist from "./components/Emaillist.js/Emaillist";
-import Compose from "./components/Emaillist.js/Compose";
-import Welcome from "./components/Welcome/Welcome";
-import SignIn from "./components/User/SignIn";
-import PassReset from "./components/User/PassReset";
-import Footer from "./components/NavBar/Footer";
-import UpdateProfile from "./components/User/UpdateProfile";
-import UserProfile from "./components/User/UserProfile";
-import { getUserDataAction } from "./components/Reducer/asyncUserReducer";
-import { getEmailDataAction } from "./components/Reducer/asyncEmailReducer";
-import EmailDetails from "./components/Emaillist.js/EmailDetails";
-import SentEmails from "./components/Emaillist.js/SentEmails";
-import SentEmailBody from "./components/Emaillist.js/SentEmailBody";
-import SentEmailList from "./components/Emaillist.js/SentEmailList";
-import SentEmailDetails from "./components/Emaillist.js/SentEmailDetails";
+import {
+  SentEmailDetails,
+  SentEmailList,
+  EmailDetails,
+  getEmailDataAction,
+  getUserDataAction,
+  Footer,
+  UpdateProfile,
+  UserProfile,
+  PassReset,
+  SideBar,
+  SignUp,
+  store,
+  NavBar,
+  Header,
+  Emaillist,
+  Compose,
+  Welcome,
+  SignIn,
+} from "./components";
 import { createTheme, CssBaseline, ThemeProvider } from "@mui/material";
 
 const App = () => {

@@ -5,7 +5,7 @@ import userSlice from "../Slices/userSlice";
 const store = configureStore({
   reducer: {
     user: userSlice.reducer,
-    email : emailSlice.reducer,
+    email: emailSlice.reducer,
   },
 });
 
